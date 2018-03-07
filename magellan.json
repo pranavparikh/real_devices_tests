@@ -1,0 +1,837 @@
+{
+  "framework": "testarmada-magellan-nightwatch-plugin",
+  "executors": [
+    "testarmada-magellan-local-executor",
+    "testarmada-magellan-saucelabs-executor",
+    "testarmada-magellan-testobject-executor"
+  ],
+  "reporters": [
+    "testarmada-bloop"
+  ],
+  "profiles": {
+    "to_android_lg": [
+      {
+        "browser": "LG G3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "privateDevicesOnly": true,
+          "platformName": "android"
+        }
+      }
+    ],
+    "to_android_s5": [
+      {
+        "browser": "Samsung Galaxy S5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "privateDevicesOnly": true,
+          "platformName": "android"
+        }
+      }
+    ],
+     "to_android_s7": [
+      {
+        "browser": "Samsung Galaxy S7",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "privateDevicesOnly": true,
+          "platformName": "android"
+        }
+      }
+    ],
+     "to_android_s8": [
+      {
+        "browser": "Samsung Galaxy S8",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "privateDevicesOnly": true,
+          "platformName": "android"
+        }
+      }
+    ],
+    "to_iphone_5s": [
+      {
+        "browser": "iPhone 5S",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_iphone_6": [
+      {
+        "browser": "iPhone 6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_iphone_6P": [
+      {
+        "browser": "iPhone 6 Plus",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_iphone_6S": [
+      {
+        "browser": "iPhone 6S",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_iphone_6SP": [
+      {
+        "browser": "iPhone 6S Plus",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_iphone_7": [
+      {
+        "browser": "iPhone 7",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_iphone_7P": [
+      {
+        "browser": "iPhone 7 Plus",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "to_ios": [
+      {
+        "browser": "iPhone 5S",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      },
+      {
+        "browser": "iPhone 6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      },
+      {
+        "browser": "iPhone 6 Plus",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      },
+      {
+        "browser": "iPhone 6S",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      },
+      {
+        "browser": "iPhone 6S Plus",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      },
+      {
+        "browser": "iPhone 7",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      },
+      {
+        "browser": "iPhone 7 Plus",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest",
+          "privateDevicesOnly": true,
+          "platformName": "iOS"
+        }
+      }
+    ],
+    "testobject_ios": [
+      {
+        "browser": "iPhone_5S_10_1_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_5S_10_2_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_5S_10_2_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_5S_9_3_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_5S_9_3_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_10_3_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_10_3_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_10_3_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_9_3_wm",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_9_3_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_Plus_10_2_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_Plus_10_2_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_Plus_10_2_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_Plus_9_2_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6_Plus_9_3_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_10_1_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_10_2_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_10_2_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_10_3_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_10_3_wm5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_10_3_wm6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_9_3_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_9_3_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_10_3_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_10_3_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_10_3_wm5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_10_3_wm6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_10_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_10_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_9_3_wm",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_6S_Plus_9_3_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_10_1_wm",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_10_1_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_10_1_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_10_1_wm5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_10_2_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_10_wm6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm11",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm12",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm13",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm14",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm15",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm7",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_1_wm9",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm10",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      },
+      {
+        "browser": "iPhone_7_Plus_10_2_wm8",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>",
+          "automationName": "XCUITest"
+        }
+      }
+    ],
+    "testobject_android": [
+      {
+        "browser": "Samsung_Galaxy_S5_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S5_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S7_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S7_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S7_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S7_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "LG_G3_wm",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "LG_G3_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm1",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm10",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm11",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm12",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm2",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm3",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm4",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm5",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm6",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm7",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm8",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      },
+      {
+        "browser": "Samsung_Galaxy_S8_wm9",
+        "executor": "testobject",
+        "appium": {
+          "testobjectApiKey": "<TESTOBJECT API KEY>"
+        }
+      }
+    ]
+  }
+}
