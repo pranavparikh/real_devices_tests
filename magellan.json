@@ -3,12 +3,33 @@
   "executors": [
     "testarmada-magellan-local-executor",
     "testarmada-magellan-saucelabs-executor",
-    "testarmada-magellan-testobject-executor"
+    "testarmada-magellan-testobject-executor",
+    "testarmada-magellan-browserstack-executor"
   ],
   "reporters": [
     "testarmada-bloop"
   ],
   "profiles": {
+    "bs_app": [
+      {
+        "browser": "Samsung Galaxy S8",
+        "executor": "browserstack",
+        "appium": {
+          "device": "Samsung Galaxy S8",
+          "realMobile": true,
+          "app": "MyApp",
+          "build": "MyBuild",
+          "project": "MyProject",
+          "autoDismissAlerts": true
+        }
+      }
+    ],
+    "bs_web": [
+      {
+        "browser": "chrome_64_0_Windows_10",
+        "executor": "browserstack"
+      }
+    ],
     "to_android_lg": [
       {
         "browser": "LG G3",

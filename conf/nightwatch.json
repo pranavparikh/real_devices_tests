@@ -171,6 +171,16 @@
       "selenium": {
         "start_process": false
       }
+    },
+    "browserstack": {
+      "request_timeout_options": {
+        "timeout": 2000000
+      },
+      "selenium_host": "hub.browserstack.com",
+      "selenium_port": 80,
+      "selenium": {
+        "start_process": false
+      }
     }
   }
 }

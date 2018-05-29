@@ -1,0 +1,5 @@
+App - Android
+DPRO=android ./node_modules/.bin/magellan --tag s8 --profile bs_s8_app --max_workers 1 --max_test_attempts
+
+Web - Desktop
+DPRO=local ./node_modules/.bin/magellan --profile bs_web --test tests/demo-web.js --max_test_attempts 1 --bs_create_tunnel --serial
