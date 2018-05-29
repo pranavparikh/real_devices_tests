@@ -1,5 +1,17 @@
-App - Android
-DPRO=android ./node_modules/.bin/magellan --tag s8 --profile bs_s8_app --max_workers 1 --max_test_attempts
-
 Web - Desktop
-DPRO=local ./node_modules/.bin/magellan --profile bs_web --test tests/demo-web.js --max_test_attempts 1 --bs_create_tunnel --serial
+$ DPRO=local ./node_modules/.bin/magellan --profile bs_web_desk --test tests/demo-web.js --max_test_attempts 1 --bs_create_tunnel 
+
+Web - Android
+$ DPRO=local ./node_modules/.bin/magellan --profile bs_web_and --test tests/demo-mweb.js --max_test_attempts 1 --bs_create_tunnel 
+
+Web - iOS
+$ DPRO=local ./node_modules/.bin/magellan --profile bs_web_ios --test tests/demo-mweb.js --max_test_attempts 1 --bs_create_tunnel 
+
+App - Android
+$ DPRO=android ./node_modules/.bin/magellan --test tests/demo-app.1.js --profile bs_app_and --max_test_attempts 1
+
+App - iOS
+$ DPRO=ios ./node_modules/.bin/magellan 
+--test tests/demo-app.1.js 
+--profile bs_app_ios 
+--max_test_attempts 1
