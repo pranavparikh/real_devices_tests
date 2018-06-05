@@ -11,7 +11,4 @@ App - Android
 $ DPRO=android ./node_modules/.bin/magellan --test tests/demo-app.1.js --profile bs_app_and --max_test_attempts 1
 
 App - iOS
-$ DPRO=ios ./node_modules/.bin/magellan 
---test tests/demo-app.1.js 
---profile bs_app_ios 
---max_test_attempts 1
+$ DPRO=ios ./node_modules/.bin/magellan --test tests/demo-app.1.js --profile bs_app_ios --max_test_attempts 1
